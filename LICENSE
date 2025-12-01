@@ -1,29 +1,13 @@
-Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0)
+Copyright 2024 The ScanFlow Authors
 
-By using this work, you accept the following terms and conditions:
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-1.  **Attribution.** You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    http://www.apache.org/licenses/LICENSE-2.0
 
-2.  **NonCommercial.** You may not use the material for commercial purposes.
-
-3.  **No additional restrictions.** You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-**Notice:**
-
-You do not have to comply with the license for elements of the material or the material itself that are in the public domain or are otherwise excluded or limited by the rights you have. No warranties are given. The license may not give you all of the rights you need for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
-
-**This is a human-readable summary of the Legal Code (the full license).**
-
-This License allows you to:
-
-*   **Share** — copy and redistribute the material in any medium or format.
-*   **Adapt** — remix, transform, and build upon the material.
-
-Under the following terms:
-
-*   **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-*   **NonCommercial** — You may not use the material for commercial purposes.
-
-**No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-**https://creativecommons.org/licenses/by-nc/4.0/legalcode
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
