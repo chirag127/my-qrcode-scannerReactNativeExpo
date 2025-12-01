@@ -1,39 +1,54 @@
-# Node/NPM
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-node_modules/
-dist/
-build/
-.parcel-cache/
-.vite/
-coverage/
-*.local
+# Byte-compiled / optimized / Python files
+*.pyc
+__pycache__/
+*.egg-info/
 
-# Expo
-.expo/
-crash-reports/
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
 
-# React Native
-.react-native-compiler-cache/
-
-# macOS
-.DS_Store
-
-# Editor/IDE
+# IDE / Editor specific files
 .vscode/
 .idea/
-*.iml
-*.sublime-workspace
+*.swp
 
-# Testing
-__tests__/
-jest-test-results.json
+# Dependency directories
+node_modules/
+npm_modules/
+yarn_modules/
 
-# Build artifacts
-*.apk
-*.aab
+# Build output
+dist/
+build/
+target/
 
-# OS generated files
+# Log files
+*.log
+
+# OS specific files
 .DS_Store
 Thumbs.db
+
+# Expo specific
+.expo/
+android/build/
+iOS/build/
+
+# React Native / Metro Bundler
+metro-config.js
+metro-cache/
+
+# Credentials / Secrets (NEVER COMMIT)
+.env
+*.env*
+
+# Test specific files
+coverage/
+*.test.js.snap
+*.unit.js.snap
+*.integration.js.snap
+
+# Tauri specific
+.config/
