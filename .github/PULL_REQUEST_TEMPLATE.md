@@ -1,56 +1,47 @@
-# Pull Request: Apex Verification Gate
+# Pull Request Template
 
-## 1. Commit & Title Guidelines
-*   **Title Format:** Must strictly adhere to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): `<type>(<scope>): <description>`
-    *   *Example Scopes for Mobile:* `(scanner)`, `(ui)`, `(api)`, `(state)`, `(config)`.
-    *   *Example Titles:* `feat(scanner): Add support for Aztec code decoding`, `fix(ui): Correct layout shift on configuration screen`.
+## Description
 
-## 2. Type Selection
-<!-- Select ONE primary type that best describes the impact of this PR -->
+Provide a concise summary of the changes introduced in this pull request.
 
-- [ ] **feat**: A new feature or capability (Signals a Minor version bump).
-- [ ] **fix**: A bug fix addressing functional or visual errors (Signals a Patch version bump).
-- [ ] **refactor**: Code reorganization that preserves external behavior (Signals a Patch version bump).
-- [ ] **test**: Adding missing tests or correcting existing test implementation.
-- [ ] **docs**: Documentation-only changes (README, comments, templates).
-- [ ] **chore**: Changes to the build process, CI/CD, or auxiliary tools (No version bump).
+## Type of Change
 
-## 3. Bottom Line Up Front (BLUF) Summary
-<!-- Provide a concise, two-sentence summary of what this PR achieves. Why should the reviewer care? -->
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
+- [ ] Refactor
+- [ ] Performance Improvement
 
-## 4. Context & Motivation
-<!-- Why is this change necessary? Link directly to related issues using keywords (e.g., `Closes #123`, `Fixes #45`). -->
+## Checklist
 
-<!-- Describe architectural impact: Did this implement a Command or Query? Did it adhere to SOLID principles (especially SRP)? -->
+- [ ] I have read and understood the **CONTRIBUTING.md** guidelines.
+- [ ] My code adheres to the **Apex Technical Authority** standards and architectural principles.
+- [ ] I have performed a self-review of my own code.
+- [ ] I have commented my code, particularly in hard-to-understand areas.
+- [ ] I have made corresponding changes to the documentation (if applicable).
+- [ ] My changes generate no new warnings or errors.
+- [ ] I have added tests that prove my fix is effective or that my feature works.
+- [ ] New and existing unit tests pass locally with my changes.
+- [ ] Any dependent components have been updated or released.
+- [ ] I have updated the **AGENTS.md** documentation if my changes impact AI agent directives or tooling.
 
-## 5. Implementation Details & Verification
-### A. Feature/Logic Description
-<!-- Detail the core changes. If modifying the scanning pipeline, explain the new algorithm or dependency usage. -->
+## Related Issues
 
-### B. Testing Protocol Execution (MANDATORY GATE)
-*   **Unit/Component Tests:**
-    *   [ ] New or modified logic is covered by Unit Tests (Vitest/Jest).
-    *   [ ] State transition verification is in place.
-*   **E2E/Integration Tests (if applicable):**
-    *   [ ] Critical user flows impacted by this PR are validated by E2E tests (Detox/Playwright).
-*   **Coverage Verification:**
-    *   [ ] CI pipeline shows zero test failures.
+Closes #
 
-### C. Documentation & Configuration
-*   [ ] In-app documentation (Tooltips, Settings descriptions) updated if UI/UX changed.
-*   [ ] Environment variables or configuration files (`app.config.ts`, etc.) reviewed and updated if necessary.
-*   [ ] Architecture/Agent documentation reviewed if fundamental changes occurred.
+## Technical Notes & Architectural Alignment
 
-## 6. Apex Architectural Alignment Check
-<!-- Self-audit against the Authority Principles before submission. -->
+*   **Architecture:** Changes align with the established **Feature-Sliced Design (FSD)** principles for React Native projects. (See AGENTS.md for details).
+*   **Tooling:** All development and testing adhere to the **Apex Toolchain**: TypeScript, Vite, TailwindCSS v4, Tauri v2, Biome, Vitest, Playwright.
+*   **Performance:** Focus on maintaining or improving the high-performance characteristics of the `ScanFlow-HighPerformance-QRBarcode-MobileScanner-App`.
+*   **Data Integrity:** Ensure all data capture and processing are accurate and resilient.
+*   **Security:** Follows the guidelines outlined in **SECURITY.md**.
 
-- [ ] **CQS Adherence:** Is this PR purely a Command (writes) or purely a Query (reads)? (Avoid mixing).
-- [ ] **Guard Clauses:** Are excessive nested `if/else` statements eliminated in favor of early returns?
-- [ ] **Self-Documenting Code:** Is the code readable without relying on excessive line-by-line comments?
-- [ ] **Security:** Are all external inputs (from user gestures or peripherals) appropriately validated/sanitized?
+## Additional Context
 
----
+Add any other context about the problem that you want to provide.
 
-**⚠️ SELF-REVIEW CONFIRMATION**
+--- 
 
-By checking the boxes above, I confirm that this branch has passed all local linting (`biome check --apply`) and local testing (`jest` or `vitest`) with **ZERO WARNINGS OR ERRORS**.
+**IMPORTANT:** Ensure all changes are validated against the **Apex Technical Authority** standards and the project's core directives as detailed in **AGENTS.md**. Verify all dynamic links and badges reflect the correct repository name: `https://github.com/chirag127/ScanFlow-HighPerformance-QRBarcode-MobileScanner-App`.
